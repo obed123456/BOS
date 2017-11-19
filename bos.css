@@ -1,0 +1,10 @@
+#navbar {
+ border: 1px solid red;
+ height: 70px;
+ align-items: center;
+}
+
+.navbar, .navbar-expand-lg, .navbar-light .bg-light, .collapse, .navbar-collapse, .navbar-nav, .nav-item, .nav-link {
+  flex-direction: row;
+  justify-content: flex-end;
+}
