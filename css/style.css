@@ -1,6 +1,14 @@
 body{
      font-family: 'Lato', sans-serif;
 }
+.hamburger {
+        width: 2.9rem;
+        height: 0.5rem;
+        background-color: black;
+        margin: 6px 0;
+        border-radius: 5px;
+    }
+
  #head-container{
      padding-right: 0px;
      padding-left: 0px;
