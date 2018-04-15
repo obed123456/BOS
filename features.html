@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!---------------font-awesome website link-liberary--------->
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/form.js"></script>
+  <script src="js/js1.js"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    
+</head>
+<body style="margin:0px;padding: 0px;" onresize="refresh()">
+
+<!-------------------------------starts-heder--------------------------->    
+    
+    
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" id="clsbtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+	<a href="index.html">Home</a>
+	<a href="whyoss.html">Why Oss?</a>
+    <a href="#features">Features</a>
+    <a href="price.html">Price</a>
+	<a href="about_us.html">About Us</a>
+    
+  </div>
+</div>
+
+<!---------------------------------menubar---------------------------------->
+    
+<div class="container-fluid" id="head-container">
+
+<nav class="navbar navbar navbar-default my_menu" data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span  class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+			<span class="pull" style="font-size:24px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      </span>
+        
+        <a class="navbar-brand" href="index.html"><img src="images/Bokning%20&%20Schema%20Online.png" class="logo img-responsive" /></a>
+    </div>
+	
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="index.html" >Home</a></li>
+		<li><a href="whyoss.html">Why Oss?</a></li>
+        <li class="active"><a href="features.html">Features</a></li>
+        <li><a href="price.html">Price</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+</div>
+    
+<!---------------------------------end-of-menubar------------------------->    
+
+<!--------------------------canvas-------------------------------------->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="canv1 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="feature_head">
+            <p class="text-center main_feat_head">Fakturaunderlag</p>
+            <p class="main_feat_cont text-center">Det är enkelt! Från en bokning till fakturering.<br/>Skapa en gångsuppdrag, återkommande,<br/> se när och var dina anställda stämplade in och ut eller skapa massfakturering slutet på månad.</p>       
+        </div>
+		<canvas id="myCanvas"  style="width: 100%"></canvas> 
+        <iframe width="50%" height="60%" src="https://www.youtube.com/embed/WEhqdQLGeWI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="iframe1">
+        </iframe>
+        </div>
+    </div>
+</div>
+
+<script src="js/canvas1.js"></script>
+<br/>
+<br/>
+<!-------------------------end-of-canvas-1------------------------------------->    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-6 col-lg-6">
+                 
+                    <p class="text-center canvastxt">Bokning - Lägg till nya uppdrag</p><hr class="hr" />
+                    <p class="mid_intxt text-center">Du kan skapa en gångs uppdrag t.ex. flytstädning eller storstädning eller återkommande uppdrag hemstädning. Tänk aldrig på du eller dina anställda kommer missa någon bokning.</p>
+            </div>
+            <div class="canv1 col-xs-12 col-sm-6 col-sm-pull-6 col-md-6 col-lg-6">
+                <canvas id="myCanvas2"  style="width: 100%;"></canvas> 
+				
+            </div>
+        </div>
+		<script src="js/canvas2.js"></script>
+    </div>
+    
+    
+    <br/>
+    <br/>
+<!-------------------------end-of-canvas-2------------------------------------->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="canv1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <p class="text-center canvastxt">Stämpling</p><hr class="hr" />
+                    <p class="mid_intxt text-center">Anställda kan enkelt stämpla in och ut när de påbörjar och slutför ett arbete. Se deras GPS position vid in och utstämplingen.</p>
+                
+            </div>
+            
+            <div class="canv-div2 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                   <canvas id="myCanvas3"  style="width: 100%;"></canvas>
+                    <img src='images/feature3.png' width="50%" height="30%" alt="feature_img3" class="feature_img3"/> 
+            </div>
+        </div>
+    </div>
+    <script src="js/canvas3.js"></script>
+    <br/>
+    <br/>
+    
+<!--------------------------End-of-canvas-3------------------------------------->
+    
+ <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-6 col-lg-6">
+                 
+                    <p class="text-center canvastxt">Fakturaunderlag</p><hr class="hr" />
+                    <p class="mid_intxt text-center">Koppla programmet med fortnox eller visma och börja fakturera direkt. Du skapar faktura underlag med en enkel klick.</p>
+            </div>
+            <div class="canv1 col-xs-12 col-sm-6 col-sm-pull-6 col-md-6">
+                <canvas id="myCanvas4"  style="width: 100%;"></canvas> 
+				
+            </div>
+        </div>
+		<script src="js/canvas4.js"></script>
+    </div>
+    
+    
+    <br/>
+    <br/>
+    
+    
+    
+<!---------------------------End-of-canvas-4--------------------------------------->
+<div class="container-fluid">
+        <div class="row">
+            <div class="canv1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <p class="text-center canvastxt">Löneunderlag</p><hr class="hr" />
+                    <p class="mid_intxt text-center">Skriv ut löneunderlag slutet på månad. Du väljer bara start och slutdatum sedan kan du skriva ut rapport som pdf eller i excel format.</p>
+                
+            </div>
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 canv-div2 col-lg-6">
+                   <canvas id="myCanvas5"  style="width: 100%;"></canvas>
+                <a href="images/feature4.png" target="_blank" title="View Image">    <img src='images/feature4.png' width="50%" height="30%" alt="feature_img3" class="feature_img3"/> </a> 
+            </div>
+        </div>
+    </div>
+    <script src="js/canvas5.js"></script>
+    <br/>
+    <br/>
+    
+<!---------------------------End-of-canvas-5--------------------------------------->
+ 
+    
+<!---------------------------Contact--------------------------------------->
+     
+        <div class="container-fluid index-before-foot">
+        <div class="row">
+            <p class="contact-head text-center">Kan vi hjälpa dig att underlätta din vardag?</p>
+        </div>
+        <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+            <center>
+                <i class="fa fa-mobile" id="icon-mob" aria-hidden="true">&nbsp; 08 21 22 58</i>
+            </center>
+        </div>
+            
+              <div class="col-xs-12 col-sm-4 col-md-4">
+           <center><a href="about_us.html"><button type="submit" id="btnpos" class="btn mybtn-cont">Kontakta oss</button></a></center>
+        </div>
+            
+        <div class="col-xs-12 col-sm-4 col-md-4">
+            <center>
+            <i class="fa fa-envelope" id="icon-email" aria-hidden="true">&nbsp; info@bokningoschema.se</i>
+            </center>    
+        </div>
+        </div>
+    </div>
+    
+ <!--------------------------------footer-------------------------------------->    
+
+    <div class="container-fluid footer well">
+        <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <a href="#"><img src="images/Bokning%20&%20Schema%20Online.png" id="footlogo" class="img-responsive" alt="footerlogo"></a>
+                </div>    
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                   <center> <ul class="footul list-inline pull-center">
+                        <li><a href="#">Vanliga frågor</a></li>    
+                        <li><a href="#">Funktioner</a></li>
+                        <li><a href="#">Jobba hos oss</a></li>
+                        <li><a href="about_us.html"><button type="submit" class="btn foot-btn">Kontakta oss</button></a></li>
+                       </ul> </center>
+                </div> 
+            </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                <p class="rights-txt"> &#169; 2018 BokningoSchema Alla rättigheter förbehållna</p>
+            </div>
+            
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <button class="footend mybtn btn pull-right" style="border-radius:50%; outline:none;">Up</button>
+            </div>
+            
+        </div>    
+    </div>    
+
+    
+<!------------end of footer--------------->
+         
+        
+    
+
+     
+</body>
+</html>
+    
